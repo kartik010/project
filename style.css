@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;   
+}
+
+/* nav bar (incomplete) */
+
+nav{
+    display: flex;
+    gap: 1em;
+    padding: 3em;
+    z-index: 1;
+    position: fixed;
+    padding-top: 10vh;
+}
+ul{
+    display: flex;
+    gap: 4em;
+    padding-left: 3em;
+    align-items: center;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    /* color: #ffff; */
+    
+}
+li:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+#logo{
+    font-weight: 100;
+}
+
+/* nav bar end */
+
+/* crousel */
+.second{
+    display: flex;
+    z-index: 0;
+    position: relative;
+    
+}
+#CrouselImg{
+    height: 40vh;
+    width: 50vw;
+    
+}
+#ContentControls{
+    height: 40vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+#ContentControls button{
+    background-color: hsl(0, 0%, 0%);
+    height: 5em;
+    width: 5em;
+    border: none;
+    margin: -2px;
+}
+#ContentControls button:hover{
+    background-color: hsl(0, 0%, 27%);
+}
+#ShopNowLink{
+    color: hsl(0, 0%, 0%);
+    letter-spacing: 1em;
+}
+#ShopNowLink:hover{
+    color: hsl(0, 0%, 63%);
+}
+.SvgHover{
+    display: none;
+}
+.btn{
+    height:34vh;
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    ul{
+        position: fixed;
+        left: -200%;
+        top: 2rem;
+        background-color: #fff;
+        height: 10vh;
+        width: 10vw;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }   
+    nav{
+    gap: 0em;
+    padding: 0em;
+    padding-top: 3em;
+    }
+    #logo{
+        width: 90vw; 
+        margin: auto; 
+        text-align: center;
+    }
+    #ham{
+        cursor: pointer;
+    }
+    .line{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        width: 25px;
+        height: 2px;
+        margin-bottom: 5px;    
+        background: black;
+        border-radius: 10px;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    #ham.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    #ham.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #ham.active .line:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+}
+
