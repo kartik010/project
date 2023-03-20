@@ -27,23 +27,30 @@
     <!-- nav bar end -->
     <!-- crousel -->
     <div class="second">
-    <div id="CrouselImg"></div>
+    <div id="CrouselImg"><img src="./images/desktop-image-hero-1.jpg" alt="classroom image" id="mainImage"></div>
     
     <!-- controls -->
 
     <div id="ContentControls">
-        <h1>Discover innovative ways to decorate</h1>
-        <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+        <div class="content">
+        <h1 class="heading1">Discover innovative ways to decorate</h1>
+        <p class="para1">We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
         <a href="#" id="ShopNowLink">SHOP NOW <img class="svg" src="/images/icon-arrow.svg" alt="arrow"><img class="SvgHover" src="/images/icon-arrow.svg" alt="arrow"></a>
+    </div>
         <div class="btn">
-        <button id="left"><img src="images/icon-angle-left.svg" alt="left arrow"></button>
-        <button id="right"><img src="images/icon-angle-right.svg" alt="right arrow"></button>
+        <button id="left" onclick="previousImage()"><img src="images/icon-angle-left.svg" alt="left arrow"></button>
+        <button id="right" onclick="nextImage()"><img src="images/icon-angle-right.svg" alt="right arrow"></button>
     </div>
     </div>
     </div>    
 <!-- third section -->
-
-
+<div id="thirdSection">
+<div class="first"><img src="images/image-about-dark.jpg" alt="dark chair"></div>
+<div class="second1"><h3 class="heading2">ABOUT OUR FURNITURE</h3><br>
+    <p>Our multifunctionl collection blends design and function to suit your indivisual taste. Make each room unique, or pick a cohesive theme that best express your intrests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+</div>
+<div class="third"><img src="images/image-about-light.jpg" alt="light chair"></div>
+</div>
 
 
 <script src="script.js"></script>
